@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 1400px;
+    background-image: url(bg/Ticket\ Desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 42px 120px 42px 120px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000002f;
+    padding-bottom: 22px;
+    margin: 0;
+}
+
+.logo .img_tablet {
+    display: none;
+}
+
+.logo .img_mobile {
+    display: none;
+}
+
+.logo h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.greetings {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.greetings h3 {
+    font-size: 40px;
+    color: #bd0000;
+    font-weight: 500;
+    margin: 0;
+}
+
+.greetings p {
+    margin: 0;
+    padding-top: 16px;
+}
+
+.ticket_info {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#F0ECEC, #EEEAEA);
+    width: 996px;
+    margin: 40px auto 40px auto;
+    padding: 37px 67px 37px 67px;
+    border-radius: 15px;
+}
+
+.inner_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 22px 67px 22px 67px;
+    border-bottom: 1px solid #0000002f;
+}
+
+.inner_info h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.80);
+
+}
+
+.inner_info h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    width: 224px;
+    color: rgba(0, 0, 0, 0.80);
+}
+
+.appreciate {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 102px 0px 102px;
+    align-items: end;
+}
+
+.appreciate p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#thank {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.message {
+    padding: 32px 101px 32px 101px;
+    background: linear-gradient(#F0ECEC, #EEEAEA);
+    margin: 0 102px 0 102px;
+    border-radius: 15px;
+}
+
+.message p a {
+    color: #bd0000;
+    font-weight: 500;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+    .container {
+        max-width: 768px;
+        background-image: url(bg/Ticket\ Tablet.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 42px 20px 42px 20px;
+    }
+
+    .container .logo {
+        width: 100%;
+    }
+
+    .logo h3 {
+        font-size: 20px;
+    }
+
+    .logo .img_desktop {
+        display: none;
+    }
+
+    .logo .img_mobile {
+        display: none;
+    }
+
+    .logo .img_tablet {
+        display: block !important;
+    }
+
+    .container .ticket_info {
+        align-items: center;
+        width: 100%;
+        margin: 40px 0 20px 0;
+        padding: 37px 0px 37px 0px;
+    }
+
+    .inner_info {
+        width: 100%;
+        padding: 22px 60px 22px 60px;
+    }
+
+    .container .appreciate {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .container .message {
+        margin: 0;
+        width: 100%;
+    }
+
+    .message {
+        padding: 64px;
+    }
+}
+
+
+@media only screen and (max-width:375px) {
+    .container {
+        max-width: 375px;
+        background-image: url(bg/Ticket\ Phone.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 42px 20px 42px 20px;
+    }
+
+    .greetings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .greetings p {
+        margin: 0;
+        padding-top: 16px;
+
+    }
+
+
+    .container .logo {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+
+    .logo h3 {
+        font-size: 10px;
+    }
+
+    .logo .img_desktop {
+        display: none;
+    }
+
+    .logo .img_tablet {
+        display: none !important;
+    }
+
+    .logo .img_mobile {
+        display: block !important;
+    }
+
+    .container .ticket_info {
+        align-items: center;
+        width: 100%;
+        margin: 40px 0 20px 0;
+        padding: 37px 0px 37px 0px;
+    }
+
+    .inner_info {
+        padding: 22px 16px 22px 16px;
+    }
+
+    .inner_info h2 {
+        width: 77px;
+    }
+
+    .inner_info h4 {
+        font-size: 16px;
+        width: 144px;
+    }
+
+    .appreciate {
+        align-items: center;
+    }
+
+    .appreciate .reinvent {
+        margin-right: 0;
+        font-size: 10px;
+    }
+
+    .container .message {
+        width: 100%;
+    }
+
+    .message {
+        padding: 32px 32px 32px 32px;
+        text-align: center;
+    }
+}
